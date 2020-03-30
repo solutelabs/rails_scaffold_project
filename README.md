@@ -18,7 +18,7 @@ For APIs, Graphql and JWT is configured. With graphql, `graphql-errors` is also 
 ### Action policy and Action policy graphql
 To have role based access to application; action-policy and action-policy-graphql is configured. Define policies in `app/policies` folder as per requirements. 
 
-### Sentry: custom Logger
+### Sentry: custom logger
 To log the server errors for staging and production environment; sentry is configured. Get sentry dns credentials; [click here]([https://sentry.io/](https://sentry.io/)). Now, edit `credentials.yml` with using `master.key` to add `sentry_dsn` key to each `staging` and `production` environment.  
 
 

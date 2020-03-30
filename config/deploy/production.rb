@@ -1,0 +1,7 @@
+set :domain, ''
+set :deploy_to, ''
+set :repository, ''
+set :branch, ''
+set :user, ''
+set :rails_env, 'production'
+set :ssh_options, ''

@@ -1,0 +1,51 @@
+require: rubocop-rails
+AllCops:
+  TargetRubyVersion: 2.5
+  Exclude:
+    - 'db/schema.rb'
+    - 'db/migrate/*.rb'
+    - 'spec/**/*.rb'
+    - 'spec/*.rb'
+    - 'config/routes.rb'
+    - 'test/**/*.rb'
+    - 'bin/*'
+    - 'config/**/*.rb'
+Layout/LineLength:
+  Max: 200
+Metrics/MethodLength:
+  Max: 20
+Metrics/ClassLength:
+  Max: 200
+Metrics/CyclomaticComplexity:
+  Max: 8
+Metrics/PerceivedComplexity:
+  Max: 9
+Metrics/AbcSize:
+  Max: 20
+Documentation:
+  Enabled: false
+Metrics/BlockLength:
+  Exclude:
+    - config/environments/*.rb
+    - lib/tasks/*.rake
+    - app/graphql/types/*.rb
+Style/AsciiComments:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Style/HashEachMethods:
+  Enabled: false
+Style/HashTransformKeys:
+  Enabled: false
+Style/HashTransformValues:
+  Enabled: false
+Style/FormatStringToken:
+  EnforcedStyle: template
+Lint/AssignmentInCondition:
+  Enabled: false
+Style/SymbolArray:
+  EnforcedStyle: brackets
+Style/WordArray:
+  EnforcedStyle: brackets
